@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Martina Ronca - Fullstack Frontend and Backend Developer Portfolio">
+    <meta name="author" content="Martina Ronca">
+    <meta name="keywords" content="Web Development, Fullstack Developer, Frontend, Backend, Portfolio">
+    <title>Martina Ronca | Fullstack Developer</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="https://www.starckphotography.com/images/icons_logos-img/logos/favicon.ico" type="image/x-icon">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../CSS/style.css">
+
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- Bootstrap for Layout -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- WOW.js for Animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="nav-header">
+        <div class="nav-brand">
+            <img src="https://s3-us-west-2.amazonaws.com/parallax-theme/assets/bradlogo2.png" alt="Martina Ronca Logo">
+        </div>
+        <i class="fa fa-bars fa-3x"></i>
+        <div class="header-links">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Sidebar -->
+    <div class="nav-screen">
+        <i class="fa fa-times fa-3x"></i>
+        <div class="nav-container">
+            <ul id="menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Fullpage Sections -->
+    <div id="fullpage">
+        <!-- Home Section -->
+        <div class="section aboutme" id="home">
+            <div class="opaque-bg">
+                <h1>Martina <span style="color:#FF6363">/</span> RONCA</h1>
+                <p><span id="typed-text"></span><span class="blinking-cursor">|</span></p>
+            </div>
+            <i id="scroll-down" class="fa fa-chevron-down fa-3x bounce"></i>
+        </div>
+
+        <!-- About Section -->
+        <div class="section" id="about">
+            <h1>About Me</h1>
+            <p>Hi, I'm Martina Ronca! A Paris-based Fullstack Developer focused on creating innovative and scalable web applications.</p>
+            <div class="container-skillbar">
+                <!-- Skill Bars -->
+                <div class="skillbar" data-percent="90%">
+                    <div class="skillbar-title" style="background: #DD1E2F;">HTML</div>
+                    <div class="skillbar-bar" style="background: #DD1E2F;"></div>
+                    <div class="skill-bar-percent">90%</div>
+                </div>
+                <div class="skillbar" data-percent="80%">
+                    <div class="skillbar-title" style="background: #EBB035;">CSS</div>
+                    <div class="skillbar-bar" style="background: #EBB035;"></div>
+                    <div class="skill-bar-percent">80%</div>
+                </div>
+                <div class="skillbar" data-percent="75%">
+                    <div class="skillbar-title" style="background: #218559;">JavaScript</div>
+                    <div class="skillbar-bar" style="background: #218559;"></div>
+                    <div class="skill-bar-percent">75%</div>
+                </div>
+                <div class="skillbar" data-percent="50%">
+                    <div class="skillbar-title" style="background: #06A2CB;">Node.js</div>
+                    <div class="skillbar-bar" style="background: #06A2CB;"></div>
+                    <div class="skill-bar-percent">50%</div>
+                </div>
+                <div class="skillbar" data-percent="30%">
+                    <div class="skillbar-title" style="background: #6840D4;">React</div>
+                    <div class="skillbar-bar" style="background: #6840D4;"></div>
+                    <div class="skill-bar-percent">30%</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Portfolio Section -->
+        <div class="section" id="portfolio">
+            <h1>Portfolio</h1>
+            <p>Explore some of my recent projects below.</p>
+            <div class="content">
+                <div class="slide">
+                    <h2>Photography Website</h2>
+                    <img src="https://s3-us-west-2.amazonaws.com/bradengelhardt/assets/personalsite.jpg" alt="Photography Website">
+                </div>
+                <div class="slide">
+                    <h2>E-Commerce App</h2>
+                    <img src="https://s3-us-west-2.amazonaws.com/bradengelhardt/assets/machete.jpg" alt="E-Commerce App">
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="section" id="contact">
+            <h1>Contact Me</h1>
+            <form id="contact-form">
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <textarea name="message" placeholder="Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>© 2024 Martina Ronca - Fullstack Developer</p>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="../JS/index.js"></script>
+</body>
+</html>
