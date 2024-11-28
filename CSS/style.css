@@ -1,238 +1,92 @@
-/* General Styles */
 body {
-  font-family: "Raleway", sans-serif !important;
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
 }
 
-ul {
-  list-style-type: none;
+h1, h2 {
+  color: #FF6363;
 }
 
 a {
-  text-decoration: none !important;
+  color: #FF6363;
+  text-decoration: none;
 }
 
-h1 {
-  color: #ff6363;
-  font-weight: bold;
+a:hover {
+  text-decoration: underline;
 }
 
-p {
-  font-size: 20px;
-  color: #484848;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.section {
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links a {
+  padding: 5px 10px;
+  transition: background 0.3s ease;
+}
+
+.nav-links a:hover {
+  background: #FF6363;
+  color: white;
+  border-radius: 4px;
+}
+
+#home {
+  text-align: center;
+  padding: 50px 20px;
+  background: #f4f4f4;
+}
+
+.grey-bg {
+  background: #f9f9f9;
+}
+
+section {
+  padding: 40px 20px;
   text-align: center;
 }
 
-.skillbar {
-  cursor: pointer;
+.skills-content .skill {
+  margin: 10px 0;
 }
 
-.hide {
-  display: none;
-}
-
-.display {
-  display: block;
-}
-
-/* Flash Alert Styles */
-.flash-container {
-  width: 100%;
-  position: fixed;
-  z-index: 700;
-  padding-top: 20px;
-  font-weight: bold;
-}
-
-.alert {
-  text-align: center !important;
-  width: 500px !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  color: #211809 !important;
-}
-
-/* Navbar Styles */
-.nav-screen {
-  height: 100%;
-  z-index: 500;
-  position: fixed;
-  background-color: #000;
-  right: -285px; /* Hidden initially */
-  width: 285px;
-}
-
-.nav-screen.active {
-  display: block;
-}
-
-.nav-brand {
-  position: fixed;
-  left: 0;
-  z-index: 600;
-  padding: 10px;
-}
-
-.nav-brand img {
-  width: 50px;
-}
-
-.fa-bars {
-  display: none !important;
-  color: #ff6363;
-  position: fixed;
-  right: 0;
-  z-index: 500;
-  cursor: pointer;
-}
-
-.fa-times {
-  color: #ff6363;
-  position: fixed;
-  right: 0;
-  z-index: 600;
-  cursor: pointer;
-}
-
-.header-links {
-  position: fixed;
-  width: 100%;
-  z-index: 500;
-}
-
-.header-links li {
-  color: white;
-  display: inline;
-  float: right;
-  padding: 15px;
-  font-size: 16px;
-}
-
-.header-links a {
-  color: #757575;
-  transition: color 0.2s ease-in;
-}
-
-.header-links a:hover {
-  color: #ff6363 !important;
-}
-
-/* Expanding Border Effect */
-.header-links a::after {
-  display: block;
-  margin: 0 auto;
-  margin-top: 5px;
-  width: 0;
-  height: 2px;
-  background-color: #fff;
-  content: "";
-  opacity: 0;
-  transition: width 0.6s, opacity 0.8s;
-}
-
-.header-links a:hover::after,
-.header-links a:focus::after {
-  opacity: 1;
-  width: 100%;
-}
-
-/* Skill Bars */
-.container-skillbar {
-  width: 100%;
-  padding: 30px 2%;
+.progress {
+  background: #ddd;
+  height: 5px;
+  border-radius: 5px;
   overflow: hidden;
 }
 
-.skillbar {
-  position: relative;
+.progress span {
   display: block;
-  margin-bottom: 15px;
-  width: 100%;
-  background: #efefef;
-  height: 30px;
-  border-radius: 3px;
-  transition: width 0.4s linear, background-color 0.4s linear;
+  height: 100%;
+  background: #FF6363;
 }
 
-.skillbar-title {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 110px;
-  font-weight: bold;
-  font-size: 13px;
-  color: #fff;
-  background: #6adcfa;
-  border-radius: 3px 0 0 3px;
-}
-
-.skillbar-title span {
-  display: block;
-  background: rgba(0, 0, 0, 0.15);
-  padding: 0 20px;
-  height: 30px;
-  line-height: 30px;
-  border-radius: 3px 0 0 3px;
-}
-
-.skillbar-bar {
-  height: 30px;
-  width: 0;
-  border-radius: 3px;
-}
-
-.skill-bar-percent {
-  position: absolute;
-  right: 10px;
-  top: 0;
-  font-size: 11px;
-  height: 30px;
-  line-height: 30px;
-  color: rgba(0, 0, 0, 0.5);
-}
-
-/* Footer Styles */
-.footer {
-  background-color: #484848;
-  height: 100px;
-  padding-top: 10px;
-}
-
-.footer p {
+footer {
+  background: #484848;
   color: white;
-  font-weight: bold;
-  font-size: 16px;
+  text-align: center;
+  padding: 10px;
 }
 
-.social-links a {
+footer a {
   color: white;
-  padding: 0 5px;
-}
-
-.social-links a:hover {
-  color: #ff6363;
-  transition: color 0.2s ease-in-out;
-}
-
-/* Media Queries */
-@media (max-width: 500px) {
-  .fa-bars {
-    display: block !important;
-  }
-
-  .header-links {
-    display: none;
-  }
-}
-
-@media (max-width: 400px) {
-  .content {
-    max-width: 300px;
-  }
-
-  .aboutme h1 {
-    font-size: 28px;
-  }
+  margin: 0 10px;
 }
